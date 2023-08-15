@@ -1,3 +1,14 @@
+<?php 
+
+include 'koneksi.php';
+
+if(isset($_GET['msg'])) {
+    echo($_GET['msg']);
+}
+
+
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,6 +23,7 @@
         <input type="text" name="username" id="user">
         <label for="pas">password</label>
         <input type="password" name="pass" id="pas">
+        <button name="buton">login</button>
     </form>
 </body>
 </html>
